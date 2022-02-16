@@ -35,7 +35,7 @@ For draft games, we need to note the gold limits of both the kingdoms and armies
     
 For example, below is a screenshot showing a draft setup, along with the correct draft notation (names anonymised).
 
-![example set up](https://imgur.com/a/NjcvZa0)
+![example set up](https://i.imgur.com/rR5iwNK.png)
 
     Draft - 160 draft 80
     Bob: Kaar'thul. Chain Lightning 3, Lightning Bolt 3. Bulwark Boots, Arcane Stone, Buckler.
