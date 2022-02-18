@@ -134,7 +134,8 @@ If a passive ability has no "dynamic" in game effect, then there is no need to m
 - `+1PDR`/`+2PDR`/`+3PDR`: +1/+2/+3 Physical Damage Return
 - `Path`/`APath`: Pathing/Allied Pathing
 - `SProof`/`Stead`: Spellproof/Steadfast
-- `Charge`/`Pier`/`Imbued`/`IStead`/`EoA`: Charging/Piercing/Imbued/Ignore Steadfast/Exhaust on Attack
+- `Charge`/`Pier`/`Imbued`/`EoA`: Charging/Piercing/Imbued/Exhaust on Attack
+- `IStead`/`ISProof`: Ignore Steadfast/Ignore Spellproof
 
 ---
 
