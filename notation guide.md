@@ -1,12 +1,16 @@
 # Notation Guide
 
-This document contains the most up-to-date list of notation used.
+This document contains the most up-to-date list of notation used to document a game of Legacy's Allure.
 
 # Format
 
 The notation log is broken up into 8 sections: one section detailing the draft information, and 7 sections for each of the 7 rounds. Each of the 7 round sections follow the same format, and the exact format of the draft section depends on whether the game is a blitz or draft game.
 
 In any game, `Player 1` is the player with the **A1** hex on their bottom left, regardless of who acts first. Additionally, we use abbreviations and acronyms for most unit names, for the sake of brevity. The one exception to this is, during drafting in the Draft section, we list the full name of hero items and abilities. However, when these are explicitly used and mentioned in Round sections, we use abbreviations.
+
+# Standard conventions
+
+Rather than using the name of the hero, we use `Hero` to denote that it took an action. If a unit moves to a hex, even as part of an ability, the hex it is moved to is the first thing folowing the unit's name. This is only violated if the movement occurred after an ability/attack *and* the order matters.
 
 ---
 
@@ -64,7 +68,7 @@ Each turn in the draft, the unit and the hex it is drafted to is noted. Multiple
     
 ---
 
-# Rounds
+# Round Sections
 
 Naturally, the rounds take up the meat of the game. Each round consists of a number of turns, where each player takes exactly one action. The first line in a round section looks like
 
@@ -213,21 +217,8 @@ There are currently 22 active abilities on non-hero cards. As with all other abi
 
 ## Movement after an ability
 
-If an ability is combinable, or if it allows for movement after doing the ability, it is sometimes necessary to denote the ability, then the movement, in that order. In this case,notate the movement as a separate action:
+If an ability is combinable, or if it allows for movement after doing the ability, it is sometimes necessary to denote the ability, then the movement, in that order. In this case, notate the movement as a separate action:
 
      UMajor roar E5 to E3; UMajor E5
      
- This indicates that Ursa Major roars the unit in **E5** to **E3**, then moves into **E5** (as allowed by the Greater Roar ability). This is only necessary is the order of actions matters - otherwise, indicate movement as normal, directly after the unit.
-
----
-
-# Unit Abbreviations and Abilties
-
-## Arengard Units
-
-| Unit Name | Abbreviation | Abilities (abbr.) |
-|:---------:|:------------:|:-----------------:|
-
-## Gath Units
-
-## Sylvan Units
+This indicates that Ursa Major roars the unit in **E5** to **E3**, then moves into **E5** (as allowed by the Greater Roar ability). This is only necessary is the order of actions matters - otherwise, indicate movement as normal, directly after the unit.
