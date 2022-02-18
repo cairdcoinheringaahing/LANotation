@@ -96,28 +96,138 @@ Melee attacks use a similar format to moving. As a "full kill" melee attack resu
 
 ## Active abilities
 
-When a unit uses an active ability, the format generally follows `<unit> <ability keyword> <hex>`, where `<unit>` is the unit using the ability, `<ability keyword>` is an abbreviation to indicate which ability was used, and `<hex>` is the hex targeted by that ability. The full list of ability keywords can be found below. There are two types of active abilities: buffs vs immediate actions.
+When a unit uses an active ability, the format either follows `<unit> <ability keyword> <hex>` (for abilities) or `<unit>: <buff> <hex>` (for buffs), where `<unit>` is the unit using the ability, `<ability keyword>` is an abbreviation to indicate which ability was used, `<buff>` is one of the specific buffs listed below, and `<hex>` is the hex targeted by that ability. The full list of ability keywords can be found below.
 
 ### Buffs
 
-When a unit grants another unit either a buff or debuff, we denote it as `<unit>: <buff> <target>`. For example, `Tact: +1P Catapult` would mean that the Tactician grants +1 Power to the Catapult. The list of buff/debuff abbreviations are shown below. If the buff/debuff is combinable, the movement goes before the colon: `Angel C2: +2S Hero` would mean that the Angel moves to **C2**, then grants a +2 Shield to the Hero.
+When a unit grants another unit either a buff or a debuff, we denote it as `<unit>: <buff> <hex>`. For example, `Tact: +1P D1` would mean that the Tactician grants +1 Power to the unit on **D1**. The list of buff/debuff abbreviations are shown below. If the buff/debuff is combinable, the movement goes before the colon: `Angel C2: +2S E2` would mean that the Angel moves to **C2**, then grants a +2 Shield to the unit on **E2**. If `<hex>` is omitted, the buff is assumed to be given to the unit giving the buff (so `Hero: +1A` would give +1 Action to the Hero).
 
-### Immediate Actions
+### Abilities
+
+Most other abilities happen against a specific unit as the turn, such as dealing or healing damage, rooting/silencing/disarming/breaking units and more. These are written as `<unit> <ability keyword> <hex>`. For example, `ATM LStrike E4` would indicate that the Adept Tempest Mage used Lightning Strike on the unit on **E4**. Again, if an ability is combinable, the movement goes immediately after the unit: `TDoctor D2 heal D4` would say that the Troll Doctor moved to **D2**, then healed the unit on **D4**.
+
+## Passive abilities
+
+If a passive ability has no "dynamic" in game effect, then there is no need to make any note of it, beyond in the draft section. For example, if Tristan has Divine Favor 2, including this in the draft section for Draft games is enough information to understand that Tristan has a +2 Shield. However, for passive abilities that require some form of action by the player, or abilities that impact other units on the board during the game, we need to make note of what happens. Some examples:
+
+- `Hero SFervor Charge` would indicate Aurelia using Sun's Fervor to gain Charging
+- `SShock C5` says that a unit has used a mana ability, and Kaar'thul's Spellshock deals 1 pure damage to the unit on **C5**
+- `TBeserker +1P#` would denote that the Troll Beserker has used its ability to gain +1 Power, and received 1 damage
+  - From this, you can see the convention to append actions that deal damage to the indicated unit with a `#`
 
 ---
 
 # Buff/Debuff Abbreviations
 
----
-
-# Unit Abbreviations
-
-## Arengard Units
-
-## Gath Units
-
-## Sylvan Units
+- `+1P`/`+2P`/`-1P`/`-2P`: +1/+2/-1/-2 Power
+- `+1R`/`+2R`/`-1R`/`-2R`: +1/+2/-1/-2 Range
+- `+1S`/`+2S`/`+3S`: +1/+2/+3 Shield
+- `+1M`/`+2M`/`-1M`/`-2M`: +1/+2/-1/-2 Movement
+- `+1A`: +1 Action
+- `+1CR`: +1 Cast Range
+- `+1SP`/`+2SP`: +1 Spell Power
+- `+1MR`/`+2MR`/`+3MR`: +1/+2/+3 Magic Resist
+- `+1PDR`/`+2PDR`/`+3PDR`: +1/+2/+3 Physical Damage Return
+- `Path`/`APath`: Pathing/Allied Pathing
+- `SProof`/`Stead`: Spellproof/Steadfast
+- `Charge`/`Pier`/`Imbued`/`IStead`/`EoA`: Charging/Piercing/Imbued/Ignore Steadfast/Exhaust on Attack
 
 ---
 
 # Ability Keyword Abbreviations
+
+For abilities that can have a variable amount of mana spent (e.g. Nature's Bosom), the ability has a `<X>M` indicator. For example, `Hero NBosom 2M; Hero heal F4; Hero: +1S F4` means that the Hero spends 2 mana to use Nature's Bosom, where the effects where healing the unit on **F4**, and giving it a +1 Shield.
+
+For abilities that have multiple levels, the ability has an `<N>` indicator to show the level used.
+
+For any ability where it is unambiguous about either `<X>M` or `<N>`, the indicator can be omitted.
+
+## Hero Abilities
+
+### Anwyn
+
+- Nature's Bosom: `Hero NBosom <X>M; Hero <action> <hex>; Hero <action> <hex>; ...`. The number of `Hero <action> <hex>` depends on `<X>`, the amount of mana spent.
+- Replace: `Hero Replace <hex 1> <hex 2>`
+- Tranquility: `Hero Tranq <X>M <hex>`
+- Quicken: `Hero Quicken <hex>`
+
+For Anwyn's standard ability, we add in an additional note at the end of the turn, such as `2. Swords C3, Hero Quicken F5; Hero: +1A`
+
+### Argog
+
+- Inner Vitality: `Hero IVital <N>`. Here, `<N>` is the level of Inner Vitality.
+- Swift Strike: `Hero SStrike`
+- Omnislash: `Hero Omni`
+
+### Aurelia
+
+- Sunstrike: `Hero SStrike <X>M <hex>`
+- Solar Aegis: `Hero SAegis <hex>`
+- Sun's Fervor: `Hero SFervor <buff 1> <buff 2>`. If only 1 mana is spent, and so only one buff is used, simply omit the second.
+- Glory: `Hero Glory`
+
+### Kaar'thul
+
+- Lightning Bolt: `Hero LBolt <N> <hex>`
+- Chain Lightning: `Hero Chain <N> <hex 1> <hex 2> <hex 3> <hex 4>`. If fewer targets are chosen than the maximum, simply omit the remaining hexes. Hexes should be ordered in decending order of damage dealt. For example, `Hero Chain F2 G3 H3` (in this case, using Chain Lightning 2) would deal 3 damage to **F2**, 2 to **G3** and 1 to **H3**.
+- Spellshock: `SShock <hex>`. Spellshock is denoted on the turn of the player hit, at the end, separated with a semicolon (e.g. `4. GSling shoot F4, ATM LStrike E4; SShock C6`)
+- Battle Fury: `Hero BFury <hex>`.
+
+### Kaladrix
+
+- True Strike: `Hero TStrike`
+- Blade Echo: `Hero BEcho <hex 1> <hex 2>`
+- Blink: `Hero Blink <hex>`
+
+### Tristan
+
+- Shield Bash: `Hero SBash <hex>`
+- Arrest: `Hero disarm <hex>`
+
+## Non-hero abilities
+
+There are currently 22 active abilities on non-hero cards. As with all other abilities, if an ability is combinable and the unit moves before using the ability, prefex the ability with the movement (`DSen G5 Man F5`):
+
+- Ram: `<unit> Ram <hex>`
+- Roar: `<unit> roar <start hex> to <end hex>`. Ursa Major's "Greater Roar" ability is also denoted the same way. If the unit moves into `<start hex>`, denote this as a separate action (e.g. `8. RGriff F4, UMinor roar F4 to F3; UMinor F4`)
+- Belch: `<unit> belch <hex 1> <hex 2> ... <hex 6>`. Up to 6 hexes can be affected by this, only list the hexes that are actually affected.
+- Disarm: `<unit> disarm <hex>`
+- Exhaust: `<unit> exhaust <hex>`
+- Healing: `<unit> heal <hex>`
+- Rooting: `<unit> roots <hex>`
+- Breaking: `<unit> breaks <hex>`
+- Detonate: `<unit> detonate <hex>` 
+- Maneuver: `<unit> Man <hex>`
+- Teleport: `<unit> teleport <hex> to <hex>`
+- Sunburst: `<unit> sunburst`
+- Resurrect: `<unit> resurrect <dead unit> <hex>`. Note that `<dead unit>` should be the name of a previously drafted unit, that has already died.
+- Silencing: `<unit> silences <hex>`
+- Safe Haven: `<unit> teleports Treant to <hex>`. As this ability only targets the active Treant, we can simply refer to it by name.
+- Flame Sweep: `<unit> FSweep <hex 1> <hex 2> <hex 3>`. Hexes should be listed in order, typically left to right from the dragon's player's PoV
+- Untouchable: `<unit> untouch <hex>`
+- Control enemy: `<unit> control <hex>`
+- Flame Assault: `<unit> FAssault <hex>`
+- Nature's Call: `<unit> summons Treant to <hex>`
+- Lackey Empower: `<unit> empower <hex>`
+- Clearing debuff: `<unit> clears <hex>`
+
+## Movement after an ability
+
+If an ability is combinable, or if it allows for movement after doing the ability, it is sometimes necessary to denote the ability, then the movement, in that order. In this case,notate the movement as a separate action:
+
+     UMajor roar E5 to E3; UMajor E5
+     
+ This indicates that Ursa Major roars the unit in **E5** to **E3**, then moves into **E5** (as allowed by the Greater Roar ability). This is only necessary is the order of actions matters - otherwise, indicate movement as normal, directly after the unit.
+
+---
+
+# Unit Abbreviations and Abilties
+
+## Arengard Units
+
+| Unit Name | Abbreviation | Abilities (abbr.) |
+|:---------:|:------------:|:-----------------:|
+
+## Gath Units
+
+## Sylvan Units
