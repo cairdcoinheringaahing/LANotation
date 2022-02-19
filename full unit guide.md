@@ -5,7 +5,7 @@ Units are organised by gold cost (ascending), then by alphabetical order
 ## Arengard Units
 
 | Unit Name | Abbreviation | Abilities (abbr.) |
-|:---------:|:------------:|:-----------------:|
+|:---------:|:------------:|:------------------|
 | Apprentice Wizard | AWizard | `AWizard: -1P <hex>` |
 | Crossbowman | Crossbow | |
 | Longbow Archer | LArcher | |
