@@ -10,7 +10,7 @@ Units are organised by gold cost (ascending), then by alphabetical order
 | Crossbowman | `Crossbow` | |
 | Longbow Archer | `LArcher` | |
 | Shieldbearer | `SBearer` | `SBearer: +1S <hex>; SBearer: -1S` |
-| Spellcradle Seraph | `Seraph` | `Seraph: +1CR <hex>` / `Seraph: +1SP <hex>` / `Seraph: ISProof` |
+| Spellcradle Seraph | `Seraph` | `Seraph: +1CR <hex>` / `Seraph: +1SP <hex>` / `Seraph: ISProof <hex>` |
 | Pikeman | `Pike` | |
 | Tactician | `Tact` | `Tact: Path <hex>` / `Tact: +1P <hex>` / `Tact: +1R <hex>` / `Tact: +1M <hex>` |
 | Tempest Mage | `TMage` | `TMage LStrike <hex>` / `TMage TClap <hex>` |
@@ -30,7 +30,7 @@ Units are organised by gold cost (ascending), then by alphabetical order
 | Battering Ram | `Ram` | `Ram Ram <hex>` |
 | Heavy Knight | `HKnight` | |
 | Catapult | `Catapult` | |
-| Archangel | `AAngel` | `AAngel: +3S <hex>` / `Angel resurrect <unit> to <hex>; Angel: +1A` |
+| Archangel | `AAngel` | `AAngel: +3S <hex>` / `AAngel resurrect <unit> to <hex>; AAngel: +1A` |
 | Grand Wizard | `GWizard` | `GWizard: -XP <hex>` / `GWizard teleport <hex> to <hex>` / `GWizard ABlast <hex>` |
 | Ultraknight | `UKnight` | |
 
