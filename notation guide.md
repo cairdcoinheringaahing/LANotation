@@ -8,6 +8,8 @@ The notation log is broken up into 8 sections: one section detailing the draft i
 
 In any game, `Player 1` is the player with the **A1** hex on their bottom left, regardless of who acts first. Additionally, we use abbreviations and acronyms for most unit names, for the sake of brevity. The one exception to this is, during drafting in the Draft section, we list the full name of hero items and abilities. However, when these are explicitly used and mentioned in Round sections, we use abbreviations.
 
+Furthermore, note the difference between "Player 1" and "the first player" - the former refers to the player with the **A1** hex on their bottom left, and the latter refers to the player acting first in a specific round. A similar difference applies with "Player 2" and "the second player". Finally, we occationally use the terms "attacker" and "defender" to refer to the player who needs to take the center hex, and the player who needs to prevent that.
+
 # Standard conventions
 
 Rather than using the name of the hero, we use `Hero` to denote that it took an action. If a unit moves to a hex, even as part of an ability, the hex it is moved to is the first thing folowing the unit's name. This is only violated if the movement occurred after an ability/attack *and* the order matters.
@@ -209,7 +211,7 @@ The current abilities on non-hero cards are shown below. As with all other abili
 - Trample: `<unit> trample <hex 1> <hex 2> <hex 3>`. Hexes should be listed in order of movement. Note that `<hex 3>` only exists if `<unit>` kills the unit on `<hex 3>` with Trample.
 - Breaking: `<unit> breaks <hex>`
 - Detonate: `<unit> detonate <hex>` 
-- Ice Nova: `<unit> INova <hex>`
+- Ice Nova: `<unit> INova <hex 1> <hex 2> <hex 3>`
 - Maneuver: `<unit> Man <hex>`
 - Teleport: `<unit> teleport <hex 1> to <hex 2>`
 - Sunburst: `<unit> SBurst`
@@ -236,3 +238,52 @@ If an ability is combinable, or if it allows for movement after doing the abilit
      UMajor roar E5 to E3; UMajor E5
      
 This indicates that Ursa Major roars the unit in **E5** to **E3**, then moves into **E5** (as allowed by the Greater Roar ability). This is only necessary is the order of actions matters - otherwise, indicate movement as normal, directly after the unit.
+
+## Passing
+
+If a player decides to pass one specific unit, this is simply notated as `<unit> Pass`. For example, `12. Wisp Pass, SArcher F5` indicates that on the 12th move (out of 14 in this specific round), the first player passed with their Wisp.
+
+If a player decides to pass all remaining units, we simply notate this as `Pass`. As an example, `13. SRanger D1, Pass` indicates that the second player passes with the rest of their units, and that the first player is free to complete all their remaining moves at once. Note that, even in this case, the first player should still list all their moves in a specific clear order, of their choice.
+
+If the first player passes, and the second player still has units to act, the first player's turns are written as `...`:
+
+    29. Arbor F1, AWizard shoot D4
+    30. Pass, Angel resurrect Swords E4
+    31. ..., Enforcer D1
+    32. ..., Angel D2
+    33. ..., AWizard F6
+    34. ..., Pass
+    
+As the first player has fewer units than the second player, we use `...` for the first player's turns as the second player makes their final moves.
+
+## Ending the game
+
+There are four ways to denote the end of the game:
+
+- When a player resigns the game, this is written as `Resign.` on their turn.
+- If, by Round 7, the attacker has a unit in **E4**, the center hex, then either:
+  - The last move was moving the unit into **E4**, in which case, we end the game by postfixing the move with a `.`: `34. ..., Hero E4.`
+  - The last move was something else. In which case, we state in a line under the final move `<unit> finishes in E4.`:
+
+        Round 1: Diane
+        ...
+        
+        Round 7: Diane
+        52. GTrench E4, Hero H2
+        53. IMinotaur trample H2, GHawk H2#
+
+        GTrench finishes in E4.
+        
+    This would denote the last moves of a game where a Trenchdigger Goblin moves into **E4**, the Hero moves to **H2**, an Ironhoof Minotaur tramples into **H2**, killing the hero, and the Glade Hawk sacrifices itself against the Ironhoof Minotaur. The round ends, and we declare that the Trenchdigger Goblin is in **E4**, so Diane has won the game.
+    
+- If, by Round 7, the attacker does not have a unit in **E4**, but still has units on the board, we state, similar to above, `No unit finishes in E4.`. Even if a defender's unit is in **E4**, we still state this.
+- If the defender completely wipes out the attacker's army before the end of Round 7, then the turn that kills the attacker's final unit is ended with a `.`.
+ 
+    Consider the following game, where, at the start of Round 5, we have Glade Hawk on **C1**, Ursa Major (with 5 damage) on **F3**, Wisp on **H2**, Priest on **F4** and Apprentice Wizard on **C4**. Arengard attacking.
+        
+        Round 5: Diane
+        40. Wisp G3 heal F3, AWizard: -1P F3
+        41. UMajor F4
+        42. GHawk C4.
+
+    As the Glade Hawk charging to **C4** kills the attacker's last unit, it ends the game. You can optionally include `No unit finishes in E4.`, but this isn't required in this case.
