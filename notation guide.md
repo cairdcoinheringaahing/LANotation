@@ -12,6 +12,8 @@ In any game, `Player 1` is the player with the **A1** hex on their bottom left, 
 
 Rather than using the name of the hero, we use `Hero` to denote that it took an action. If a unit moves to a hex, even as part of an ability, the hex it is moved to is the first thing folowing the unit's name. This is only violated if the movement occurred after an ability/attack *and* the order matters.
 
+Anything shown below in angle brackets (e.g. `<hex>`) is meant to be replaced by actual game data during a proper log. The angle brackets should also be replaced. Anything not included in angle brackets should be used verbatim in a log. Refer to the various examples for additional clarity.
+
 ---
 
 # Draft Section
@@ -37,7 +39,7 @@ For draft games, we need to note the gold limits of both the kingdoms and armies
     Front: <I6> <H5> <G6> <F5> <E6> <D5> <C6> <B5> <A6>
     Back: <I7> <H6> <G7> <F6> <E7> <D6> <C7> <B6> <A7>
     
-For example, below is a screenshot showing a draft setup, along with the correct draft notation (names anonymised).
+For example, below is a screenshot showing a draft setup, along with the correct draft notation.
 
 ![example set up](https://i.imgur.com/rR5iwNK.png)
 
@@ -94,7 +96,7 @@ When a unit takes a ranged attack against a hex, we notate it as `<unit> shoot <
 
 Melee attacks use a similar format to moving. As a "full kill" melee attack results in the attacker moving into the defender's hex, we state a melee attack as `<unit> <hex>`, where `<unit>` is the attacking unit, and `<hex>` is the hex they would move into, if they kill the defending unit. There are three possible outcomes:
 
-- The attacker kills the defender, and moves into the hex. In this case, we don't need to change the notation. Example: `UKnight F4`, with a unit in **F4** with less than 5 health left.
+- The attacker kills the defender, and moves into the hex. In this case, we don't need to change the notation. Example: `UKnight F4`, with a unit in **F4** with less than 5 health left. Note that if the attacker kills the defender, yet still takes damage from the attack (e.g. Counterstrike or Physical Damage Return), we use the next notation. 
 - The attacker does not kill the defender, takes retaliation or additional damage (e.g. Physical Damage Return) and moves back to an adjacent unoccupied hex. If it is unambigous which hex the attacker ends up in (the only avaiable hex, their movement only allows for one specific hex, etc.), then we simply append a `#` to the end of the attacked hex to denote retaliation. However, if there are multiple possible hexes the attacker could und up in, we add a `move <hex>` to the end. Example: `UMinor H3#` means that Ursa Minor attempted to attack the unit in **H3**, but it had more than 3 health remaining. In this case, Ursa Minor remains in an adjacent hex to **H3** and takes some damage in retaliation. We currently don't know the full board, but, as no hex is indicated (e.g. `UMinor H3# move H4`) we can assume that **H3** is the unambiguous point for Ursa Minor to end up at.
 - The attacker does not kill the defender, but does not take retaliation or damage from the attack (e.g. Backstab) and moves back to an adjacent unoccupied hex. If it is unambigous which hex the attacker ends up in, we append a `*` to the hex. Again, identical rules apply as when retaliation is taken, the only difference is that we use `*` to denote that not only has an attack against a hex been made, but that it wasn't a killing attack and the attacker took no retaliation.
 
@@ -136,12 +138,14 @@ If a passive ability has no "dynamic" in game effect, then there is no need to m
 - `SProof`/`Stead`: Spellproof/Steadfast
 - `Charge`/`Pier`/`Imbued`/`EoA`: Charging/Piercing/Imbued/Exhaust on Attack
 - `IStead`/`ISProof`: Ignore Steadfast/Ignore Spellproof
+- `+1B`/`+2B`: +1/+2 Burned
+- `Net`/`Hook`: Net Shot/Hook Shot
 
 ---
 
 # Ability Keyword Abbreviations
 
-For abilities that can have a variable amount of mana spent (e.g. Nature's Bosom), the ability has a `<X>M` indicator. For example, `Hero NBosom 2M; Hero heal F4; Hero: +1S F4` means that the Hero spends 2 mana to use Nature's Bosom, where the effects where healing the unit on **F4**, and giving it a +1 Shield.
+For abilities that can have a variable amount of mana spent (e.g. Nature's Bosom), the ability has a `<X>M` indicator. For example, `Hero NBosom 2M; Hero heal F4; Hero: +1S F4` means that the Hero spends 2 mana to use Nature's Bosom, where the effects were healing the unit on **F4**, and giving it a +1 Shield.
 
 For abilities that have multiple levels, the ability has an `<N>` indicator to show the level used.
 
@@ -191,30 +195,39 @@ For Anwyn's standard ability, we add in an additional note at the end of the tur
 
 ## Non-hero abilities
 
-There are currently 22 active abilities on non-hero cards. As with all other abilities, if an ability is combinable and the unit moves before using the ability, prefex the ability with the movement (`DSen G5 Man F5`):
+The current abilities on non-hero cards are shown below. As with all other abilities, if an ability is combinable and the unit moves before using the ability, prefex the ability with the movement (`DSen G5 Man F5`):
 
 - Ram: `<unit> Ram <hex>`
-- Roar: `<unit> roar <start hex> to <end hex>`. Ursa Major's "Greater Roar" ability is also denoted the same way. If the unit moves into `<start hex>`, denote this as a separate action (e.g. `8. RGriff F4, UMinor roar F4 to F3; UMinor F4`)
+- Roar: `<unit> roar <hex 1> to <hex 2>`. Ursa Major's "Greater Roar" ability is also denoted the same way. If the unit moves into `<hex 1>`, denote this as a separate action (e.g. `8. RGriff F4, UMinor roar F4 to F3; UMinor F4`)
 - Belch: `<unit> belch <hex 1> <hex 2> ... <hex 6>`. Up to 6 hexes can be affected by this, only list the hexes that are actually affected.
+- Taunt: `<unit> taunt <hex>`
 - Disarm: `<unit> disarm <hex>`
+- Launch: `<unit> launch <hex 1> at <hex 2>`. `<hex 1>` is the hex of the sacraficed unit, `<hex 2>` is the target hex.
 - Exhaust: `<unit> exhaust <hex>`
 - Healing: `<unit> heal <hex>`
 - Rooting: `<unit> roots <hex>`
+- Trample: `<unit> trample <hex 1> <hex 2> <hex 3>`. Hexes should be listed in order of movement. Note that `<hex 3>` only exists if `<unit>` kills the unit on `<hex 3>` with Trample.
 - Breaking: `<unit> breaks <hex>`
 - Detonate: `<unit> detonate <hex>` 
+- Ice Nova: `<unit> INova <hex>`
 - Maneuver: `<unit> Man <hex>`
-- Teleport: `<unit> teleport <hex> to <hex>`
-- Sunburst: `<unit> sunburst`
-- Resurrect: `<unit> resurrect <dead unit> <hex>`. Note that `<dead unit>` should be the name of a previously drafted unit, that has already died.
+- Teleport: `<unit> teleport <hex 1> to <hex 2>`
+- Sunburst: `<unit> SBurst`
+- Frostbite: `<unit> FBite <hex>`
+- Hook Shot: `<unit> hooks <hex 1> to <hex 2>`
+- Resurrect: `<unit> resurrect <dead unit> to <hex>`. Note that `<dead unit>` should be the name of a previously drafted unit, that has already died.
 - Silencing: `<unit> silences <hex>`
-- Safe Haven: `<unit> teleports Treant to <hex>`. As this ability only targets the active Treant, we can simply refer to it by name.
-- Flame Sweep: `<unit> FSweep <hex 1> <hex 2> <hex 3>`. Hexes should be listed in order, typically left to right from the dragon's player's PoV
+- Safe Haven: `<unit> teleports <hex 1> to <hex 2>`
+- Flame Sweep: `<unit> FSweep <hex 1> <hex 2> <hex 3>`
 - Untouchable: `<unit> untouch <hex>`
+- Arcane Blast: `<unit> ABlast <hex>`
+- Thunder Clap: `<unit> TClap <hex>`
 - Control enemy: `<unit> control <hex>`
 - Flame Assault: `<unit> FAssault <hex>`
 - Nature's Call: `<unit> summons Treant to <hex>`
 - Lackey Empower: `<unit> empower <hex>`
 - Clearing debuff: `<unit> clears <hex>`
+- Lightning Strike: `<unit> LStrike <hex>`
 
 ## Movement after an ability
 
