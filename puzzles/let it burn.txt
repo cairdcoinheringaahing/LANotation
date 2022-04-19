@@ -1,0 +1,15 @@
+Board:
+
+DHatch D4, Mana 2
+GBomb D2; E2; F2
+
+Aurelia E4
+Paladin F4, Mana 1
+Solar Aegis
+
+Round 7: Gath
+1. ..., Hero SAegis
+2. GBomb F3, Paladin SBurst; Paladin E3
+3. GBomb F3 detonate E4
+4. GBomb D3 detonate E4
+5. DHatch FAssault E4; DHatch E4
