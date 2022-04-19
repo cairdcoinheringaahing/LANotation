@@ -55,7 +55,7 @@ Units are organised by gold cost (ascending), then by alphabetical order
 | Warg Archer | `WArcher` | |
 | Warg Rider | `WRider` | |
 | Skorg Sorcerer | `SSorc` | `SSorc: EoA <hex>` / `SSorc control <hex>` |
-| Troll Beserker | `TBerserk` | `TBeserk: +1P#; TBeserk <hex>` |
+| Troll Berserker | `TBerserk` | `TBerserk: +1P#; TBeserk <hex>` |
 | Vesuvian Archer | `VArcher` | `<unit> <hex>; VArcher: +1B <hex>` / `<unit> trample <hex>; VArcher: +1B <hex>` <br> `<hex>` is the Vesuvian Archer's hex, and both abilities only have `VArcher: +1B <hex>` if Vesuvian Archer dies |
 | Crag Wyvern | `CWyvern` | |
 | Goblin Slingshot | `GSling` | `GSling launch <hex 1> at <hex 2>` |
