@@ -1,0 +1,26 @@
+Board:
+
+CTroll D4, 2 Health
+Berserker E4
+GBomb G4
+
+LArcher D1
+Pike G3
+HKnight G2, 3 Health
+Tact G1
+
+Round 7: Arengard
+1. Tact F2: +1P D1, GBomb F3 detonate F2 (?)
+2. LArcher shoot D4, Berserker: +1P#; Berserker G2
+3. Pike E4.
+
+Round 7: Arengard
+1. Tact F2: +1P D1, Berserker F2
+2. LArcher shoot D4, GBomb E4
+3. Pike G4
+4. HKnight E4.
+
+Round 7: Arengard
+1. Tact F2: +1P D1, Berserker D1
+2. Pike E4, CTroll E4
+3. HKnight E4.
