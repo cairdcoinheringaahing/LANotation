@@ -1,0 +1,15 @@
+Board:
+
+Hero E3, 0 Mana
+CTroll E4
+GTrench B6; G5
+LBolt 1
+
+UKnight E6
+LArcher D6; E7; F6
+
+Round 7: Gath
+1. GTrench F4 DigIn, LArcher (F6) shoot E4
+2. GTrench D5 DigIn, LArcher (D6) shoot E4
+3. CTroll E5, LArcher (E7) shoot E5
+4. Hero E4, UKnight E5.
