@@ -1,0 +1,14 @@
+Board:
+
+LArcher C5
+ELA D5
+Halb E5
+
+Anwyn D2, 0 Mana
+DSen E3
+BElk F2
+
+Round 7: Sylvan
+1. BElk E4, Halb E4#
+2. Hero D4, ELA shoot E4
+3. DSen Man E4, LArcher E3.
