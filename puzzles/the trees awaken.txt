@@ -1,0 +1,15 @@
+Board:
+
+Treant H5, 5 Health; B3
+GDruid H2, 2 Mana; C1, 1 Mana
+
+UKnight G5
+ELA E5
+Pike E4
+Enforcer D2
+
+Round 7: Sylvan
+1. GDruid (H2) teleport H5 to B4, Enforcer C3 disarms B3
+2. Treant (B3) C4, UKnight H2
+3. GDruid teleport B4 to D4
+4. Treant E4
