@@ -13,4 +13,4 @@ Round 7: Arengard
 1. Tact F2: Pathing G2, GBomb F3 detonate F2
 2. LArcher F2, Berserker Pass
 3. Pike Pass, CTroll Pass
-4. HKnight E4.s
+4. HKnight E4.
