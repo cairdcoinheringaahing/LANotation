@@ -1,0 +1,52 @@
+caird vs caird*
+
+Notes: Uses the opponent's deck from one of caird's games in the 23/04 120g blitz tourney, gameplay logs caird playing themself, not the tourney game
+Notes: Player "caird*" is caird playing with their opponent's deck
+
+Draft - Blitz 120
+caird: Argog
+caird*: Argog
+
+caird: Argog. Swift Strike, Omnislash, Reflexes. Felgard's Battle Suit, Crystal Sword, Demon Tooth Dagger.
+Front: Berserker, CWyvern, FMinotaur, CWyvern, VWarlock, CWyvern, IMinotaur, CWyvern, Berserker
+Back: GLackey, VWarlock, GLackey, VWarlock, TDoctor, Hero, GLackey, VWarlock, GLackey
+
+caird*: Argog. Inner Vitality 3, Swift Strike, Omnislash, Reflexes. Felgard's Battle Suit, Vitality Charm 3.
+Front: DHatch, CWyvern, DHatch, CWyvern, BDragon, CWyvern, DHatch, CWyvern, DHatch
+Back: DHatch, DHatch, GLackey, Hero, X, CWyvern, GLackey. DHatch, DHatch
+
+Round 1: caird
+1. VWarlock E3 roots E6; VWarlock: +1B E6, CWyvern H1
+2. VWarlock C3 roots B5; VWarlock: +1B B5, CWyvern D1
+3. CWyvern B6, DHatch (G6) E4 FAssault E3
+4. CWyvern H6, DHatch (A6) C4 FAssault C3
+5. GLackey C3: +1P D2, DHatch (I7) H5 FAssault H6
+6. CWyvern D6, DHatch (A7) FAssault B6
+7. GLackey (I1) G2: +1P F2, CWyvern B6
+8. CWyvern E4, DHatch FAssault D6
+9. Berserker C4, GLackey D6
+10. FMinotaur D1, GLackey H6
+11. GLackey C1, DHatch I3 FAssault I2
+12. Berserker I3, CWyvern Pass
+13. IMinotaur H1, Hero D4
+14. GLackey Pass, BDragon Pass
+15. Hero Pass
+16. TDoctor Pass
+
+Round 2: caird
+17. CWyvern F5, Hero C4
+18. TDoctor G2 heal I3, DHatch (A7) C5
+19. IMinotaur F3, DHatch E4 FAssault F3
+20. FMinotaur B2, BDragon F4 FSweep F3
+21. GLackey F2 heal F3, GLackey C6: +1P B5
+22. Hero D3, CWyvern F3#
+23. GLackey Pass, CWyvern E6
+24. Berserker Pass, GLackey F6
+
+Round 3: caird
+25. IMinotaur E4 trample F4, BDragon E3 FSweep D3 E4
+26. GLackey heal D3, Hero SStrike; Hero Omni
+27. TDoctor heal D3, DHatch D4 FAssault D3
+28. DTD E3; Hero SStrike; Hero Omni, CWyvern D3#
+29. CWyvern E3, GLackey E6
+30. FMinotaur C4, Resign.
