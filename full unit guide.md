@@ -14,7 +14,7 @@ Units are organised by gold cost (ascending), then by alphabetical order
 | Pikeman | `Pike` | |
 | Tactician | `Tact` | `Tact: Path <hex>` / `Tact: +1P <hex>` / `Tact: +1R <hex>` / `Tact: +1M <hex>` |
 | Tempest Mage | `TMage` | `TMage LStrike <hex>` / `TMage TClap <hex>` |
-| Enforcer | `Enforcer` | `Enforcer disarm <hex>` |
+| Enforcer | `Enforcer` | `Enforcer: Disarm <hex>` |
 | Priest | `Priest` | `Priest heal <hex>` / `Priest clear <debuff> <hex>; Priest heal <hex>` |
 | Swordsman | `Swords` | |
 | Elite Longbow Archer | `ELA` | |
@@ -22,12 +22,12 @@ Units are organised by gold cost (ascending), then by alphabetical order
 | Skyreign Pegasus | `Pegasus` | |
 | Adept Tempest Mage | `ATM` | `ATM LStrike <hex>` / `ATM TClap <hex>` |
 | Elite Swordsman | `ESwords` | `ESwords: +1P` / `ESwords: +1S` |
-| Spellbreaker | `SBreak` | `SBreak: +3MR <hex>` / `SBreak silences <hex>` |
+| Spellbreaker | `SBreak` | `SBreak: +3MR <hex>` / `SBreak: Silence <hex>` |
 | Frost Maiden | `FMaiden` | `FMaiden FBite <hex>` / `FMaiden INova <hex 1> <hex 2> <hex 3>` |
-| Knight | `Knight` | |
-| Dawnbringer Paladin | `Paladin` | `Paladin SBurst`
-| Royal Griffin | `RGriff` | |
 | High Priest | `HPriest` | `HPriest heal <hex>` / `HPriest clear <debuff> <hex>; HPriest heal <hex>` |
+| Knight | `Knight` | |
+| Dawnbringer Paladin | `Paladin` | `Paladin SBurst` |
+| Royal Griffin | `RGriff` | |
 | Angel | `Angel` | `Angel: +2S <hex>` / `Angel resurrect <unit> to <hex>; Angel: +1A` |
 | Battering Ram | `Ram` | `Ram Ram <hex>` |
 | Heavy Knight | `HKnight` | |
@@ -51,7 +51,7 @@ Units are organised by gold cost (ascending), then by alphabetical order
 | Skorg Hellion | `SHell` | |
 | Dragon Hatchling | `DHatch` | `DHatch FAssault <hex>` |
 | Trenchdigger Goblin | `GTrench` | `GTrench DigIn` |
-| Vesuvian Warlock | `VWarlock` | `VWarlock roots <hex>; VWarlock: +1B <hex>` / `VWarlock silences <hex>; VWarlock overheats <hex>` |
+| Vesuvian Warlock | `VWarlock` | `VWarlock: Root <hex>; VWarlock: +1B <hex>` / `VWarlock: Silence <hex>; VWarlock: Heat <hex>` |
 | Troll Doctor | `TDoctor` | `TDoctor heal <hex>` / `TDoctor clear <debuff> <hex>` |
 | Troll Shaman | `TShaman` | `TShaman: +1P <hex>` / `TShaman: Charge <hex>` / `TShaman: Pier <hex>` / `TShaman: IStead <hex>` |
 | Warg Archer | `WArcher` | |
@@ -78,21 +78,21 @@ Units are organised by gold cost (ascending), then by alphabetical order
 | Treant | `Treant` | |
 | Glade Hawk | `GHawk` | |
 | Taunting Satyr | `TSatyr` | `TSatyr taunt <hex>` |
-| Wisp | `Wisp` | `Wisp heal <hex>` / `Wisp breaks <hex>` |
+| Wisp | `Wisp` | `Wisp heal <hex>` / `Wisp: Break <hex>` |
 | Deepwood Protector | `DProc` | `DProc Man <hex>` |
 | Deepwood Sentinel | `DSen` | `DSen Man <hex>` |
 | Tethir Archer | `TArcher` | `TArcher <hex 1> shoot <hex 2>; TArcher <hex 3>` <br> Here, `<hex 3>` is the hex the Tethir Archer originally started in before the attack |
 | Tethir Fletcher | `TFletch` | `TFletch: Pier <hex>` / `TFletch: Net <hex>` / `TFletch: Hook <hex>` |
 | Deepwood Mystic | `DMystic` | `DMystic heal <hex 1> <hex 2>` / `DMystic clear <debuff> <hex>` |
 | Norfang Hunter | `NHunter` | |
-| Norfang Sorcerer | `NSorc` | `NSorc silences <hex>` / `NSorc breaks <hex>` / `NSorc roots <hex>` |
+| Norfang Sorcerer | `NSorc` | `NSorc: Silence <hex>` / `NSorc: Break <hex>` / `NSorc: Root <hex>` |
 | Witchhunter | `WHunter` | |
 | Arbormage | `Arbor` | `Arbor: +XPDR <hex>` / `Arbor: Stead <hex>` / `Arbor: SProof <hex>` / `Arbor: Stead 2M <hex>` / `Arbor: SProof 2M <hex>` <br> The last 2 indicate that the Arbormage spent an additional mana to keep the buff until the unit on `<hex>` next moves. |
 | Centaur Guard | `CGuard` | `CGuard Man <hex>` |
 | Norfang Great Hunter | `NGH` | |
 | Tethir Grand Archer | `TGA` | `TGA <hex 1> shoot <hex 2>; TGA <hex 3>` <br> Here, `<hex 3>` is the hex the Tethir Grand Archer originally started in before the attack |
 | Hippogriff | `HGriff` | |
-| Norfang High Sorcerer | `NHS` | `NHS silences <hex>` / `NHS breaks <hex>` / `NHS roots <hex>` |
+| Norfang High Sorcerer | `NHS` | `NHS: Silence <hex>` / `NHS: Break <hex>` / `NHS: Root <hex>` |
 | Silverglade Dryad | `SDryad` | |
 | Ursa Minor | `UMinor` | `UMinor roar <hex 1> to <hex 2>` |
 | Deepwood Elder Mystic | `DEM` | `DEM heal <hex 1> <hex 2> <hex 3> <hex 4>` / `DEM clear <hex>` <br> If Deepwood Elder Mystic heals one hex for 3 and another for 1, denote as `DEM heal <hex 1> (3) <hex 2> (1)`. For a 2,1,1 healing combination, place the unit healed 2 first. However, the amounts healed do not need to be listed, as this format is unambiguous. |

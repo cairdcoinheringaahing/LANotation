@@ -106,7 +106,7 @@ Melee attacks use a similar format to moving. As a "full kill" melee attack resu
 
 When a unit uses an active ability, the format either follows `<unit> <ability keyword> <hex>` (for abilities) or `<unit>: <buff> <hex>` (for buffs), where `<unit>` is the unit using the ability, `<ability keyword>` is an abbreviation to indicate which ability was used, `<buff>` is one of the specific buffs listed below, and `<hex>` is the hex targeted by that ability. The full list of ability keywords can be found below.
 
-### Buffs
+### Buffs/Debuffs
 
 When a unit grants another unit either a buff or a debuff, we denote it as `<unit>: <buff> <hex>`. For example, `Tact: +1P D1` would mean that the Tactician grants +1 Power to the unit on **D1**. The list of buff/debuff abbreviations are shown below. If the buff/debuff is combinable, the movement goes before the colon: `Angel C2: +2S E2` would mean that the Angel moves to **C2**, then grants a +2 Shield to the unit on **E2**. If `<hex>` is omitted, the buff is assumed to be given to the unit giving the buff (so `Hero: +1A` would give +1 Action to the Hero).
 
@@ -198,7 +198,7 @@ For Anwyn's standard ability, we add in an additional note at the end of the tur
 ### Tristan
 
 - Shield Bash: `Hero SBash <hex>`
-- Arrest: `Hero disarm <hex>`
+- Arrest: `Hero: Disarm <hex>`
 
 ## Non-hero abilities
 
@@ -208,13 +208,10 @@ The current abilities on non-hero cards are shown below. As with all other abili
 - Roar: `<unit> roar <hex 1> to <hex 2>`. Ursa Major's "Greater Roar" ability is also denoted the same way. If the unit moves into `<hex 1>`, denote this as a separate action (e.g. `8. RGriff F4, UMinor roar F4 to F3; UMinor F4`)
 - Belch: `<unit> belch <hex 1> <hex 2> ... <hex 6>`. Up to 6 hexes can be affected by this, only list the hexes that are actually affected.
 - Taunt: `<unit> taunt <hex>`
-- Disarm: `<unit> disarm <hex>`
 - Launch: `<unit> launch <hex 1> at <hex 2>`. `<hex 1>` is the hex of the sacraficed unit, `<hex 2>` is the target hex.
 - Exhaust: `<unit> exhaust <hex>`
 - Healing: `<unit> heal <hex>`
-- Rooting: `<unit> roots <hex>`
-- Trample: `<unit> trample <hex 1> <hex 2> ...`. Hexes should be listed in order of movement.
-- Breaking: `<unit> breaks <hex>`
+- Trample: `<unit> trample <hex 1> <hex 2> <hex 3>`. Hexes should be listed in order of movement.
 - Detonate: `<unit> detonate <hex>` 
 - Ice Nova: `<unit> INova <hex 1> <hex 2> <hex 3>`
 - Maneuver: `<unit> Man <hex>`
@@ -223,7 +220,6 @@ The current abilities on non-hero cards are shown below. As with all other abili
 - Frostbite: `<unit> FBite <hex>`
 - Hook Shot: `<unit> hooks <hex 1> to <hex 2>`
 - Resurrect: `<unit> resurrect <dead unit> to <hex>`. Note that `<dead unit>` should be the name of a previously drafted unit, that has already died.
-- Silencing: `<unit> silences <hex>`
 - Safe Haven: `<unit> teleport <hex 1> to <hex 2>`
 - Flame Sweep: `<unit> FSweep <hex 1> <hex 2> <hex 3>`
 - Untouchable: `<unit> untouch <hex>`
