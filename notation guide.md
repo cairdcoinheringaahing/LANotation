@@ -66,7 +66,7 @@ Given the strategic aspect of drafting, sometimes the turn order may provide imp
 Each turn in the draft, the unit and the hex it is drafted to is noted. Multiple unit drafts are separated with a semi-colon. For example, the opening to the above draft may have been:
 
     Draft - 160 draft 80
-    D1. Char B2; Char H2; Hero E1, UMinor F5; UMajor D5; Hero E6
+    D1. Char B2; Char H2; Kaar'thul E1, UMinor F5; UMajor D5; Kaladrix E6
     D2. TDoctor D1, Wisp G7; Wisp C7
     ...
     

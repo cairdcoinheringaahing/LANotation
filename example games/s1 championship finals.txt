@@ -1,0 +1,83 @@
+Gravy vs Mpire
+
+Notes: This is the first match of the Legacy's Allure Season 1 Championship Grand Finals.
+Notes: You can view this match on Youtube at https://www.youtube.com/watch?v=tsoLb-HFlsw
+
+Draft - 160 draft 80
+D1. DHatch C6; DHatch G6, VWarlock B1; VWarlock H1
+D2. TDoctor E7, GArcher A2; GArcher I2
+D3. GBomb A7; GBomb I7, GBomb A1; GBomb I1
+D4. Velocity Greaves, DHatch C2; DHatch G2
+D5. GArcher A6; GArcher I6, Kaar'thul E1
+D6. GBomb C7; GBomb G7, GLackey C1; GBomb G1
+D7. WArcher E6, WArcher E2
+D8. GLackey B6; GLackey H6, GTrench H2
+D9. Grunt H5, Battle Fury; Lightning Bolt 1
+D10. WArcher F6, SArcher F1; HBear F2
+D11. BDragon D6, BDragon D2
+D12. WRider B5; Argog F5; Broad Sword, SCH D1; Spellshock
+
+Round 1: Gravy
+1. Hero F2, SArcher shoot F2
+2. GBomb (I7) Pass, GBomb (I1) Pass
+3. GBomb (G7) Pass, GBomb (G1) Pass
+4. GBomb (C7) Pass, GBomb (A1) Pass
+5. GBomb (A7) Pass, GTrench I4 DigIn
+6. DHatch I5 FAssualt I4; SShock I6, Hero BFury I2; Hero +1A
+7. GLackey (H6) Pass, Hero shoot F2
+8. GLackey (B6) Pass, VWarlock I3: Root I6; VWarlock: +1B I6
+9. GArcher (I6) Pass, SCH F2
+10. GArcher (A6) Pass, GLackey Pass
+11. Grunt H4, GArcher H3 shoot H4
+12. WArcher (F6) G4 shoot H3, DHatch G3 FAssualt G4
+13. TDoctor G6 heal G4, DHatch F3 FAssualt G4
+14. WArcher E4 shoot F3, BDragon F4 FSweep E4 G4
+15. BDragon F5 FSweep F4; SShock I6, WArcher shoot E4
+16. WRider D3, VWarlock D1: Root C4; VWarlock: +1B C4
+17. DHatch C5 FAssualt F4; SShock E4, GArcher Pass
+
+Round 2: Mpire
+1. BDragon G2, DHatch D2 FAssualt D1; SShock D3
+2. GArcher D1 shoot D2, BDragon E3 FSweep E2 F2 F3; SShock E3
+3. VWarlock: Root I5; VWarlock +1B I5; VWarlock H2, Grunt I4
+4. DHatch F2 FAssualt E3, WRider E2
+5. Hero BFury F1; Hero +1A, TDoctor E6 heal E3; SShock E6
+6. SArcher F3 shoot E3, DHatch Pass
+7. GBomb F2 detonate E3, GLackey G5
+8. Hero F1 LBolt 1 E3, GBomb (A7) Pass
+9. GLackey E1, GBomb (C7) Pass
+10. GBomb C1, GArcher Pass
+11. Pass, Pass
+
+Round 3: Gravy
+1. GLackey F3, GArcher shoot E2
+2. WRider F1, GLackey F1
+3. GArcher D4, DHatch F3
+4. GBomb (A7) C6, GBomb I3 detonate I4
+5. GBomb (I7) G6, VWarlock F2
+6. GBomb D5, GBomb E2
+7. GLackey Pass, BDragon Pass
+8. TDoctor E4 heal E4, ...
+9. GBomb F5, ...
+10. DHatch G3 FAssualt F2, ...
+
+Round 4: Mpire
+1. GBomb D3 detonate D4, GBomb (D5) F4 detonate F3
+2. DHatch G3, TDoctor shoot G3
+3. BDragon E3, GLackey Pass
+4. Pass, Pass
+
+Round 5: Gravy
+1. TDoctor E6, GLackey E2
+2. GBomb (G6) G5, GArcher D2
+3. GBomb E4 detonate E3, BDragon F5
+4. Pass
+
+Round 6: Gravy
+1. TDoctor D4, GArcher G4 shoot G5
+2. GLackey D5, BDragon E4
+3. GBomb E5 detonate E4, GLackey Pass
+
+Round 7: Mpire
+1. BDragon D4, GLackey D4
+2. GArcher E4 shoot D4.
