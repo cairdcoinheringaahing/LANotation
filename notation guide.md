@@ -140,8 +140,13 @@ If a passive ability has no "dynamic" in game effect, then there is no need to m
 - `SProof`/`Stead`: Spellproof/Steadfast
 - `Charge`/`Pier`/`Imbued`/`EoA`: Charging/Piercing/Imbued/Exhaust on Attack
 - `IStead`/`ISProof`: Ignore Steadfast/Ignore Spellproof
-- `+1B`/`+2B`: +1/+2 Burned
 - `Net`/`Hook`: Net Shot/Hook Shot
+- `+1B`/`+2B`: +1/+2 Burned
+- `Disarm`: Disarmed
+- `Root`: Rooted
+- `Heat`: Cannot be healed or buffed
+- `Break`: Broken
+- `Silence`: Silenced
 
 ---
 
@@ -208,7 +213,7 @@ The current abilities on non-hero cards are shown below. As with all other abili
 - Exhaust: `<unit> exhaust <hex>`
 - Healing: `<unit> heal <hex>`
 - Rooting: `<unit> roots <hex>`
-- Trample: `<unit> trample <hex 1> <hex 2> <hex 3>`. Hexes should be listed in order of movement. Note that `<hex 3>` only exists if `<unit>` kills the unit on `<hex 3>` with Trample.
+- Trample: `<unit> trample <hex 1> <hex 2> ...`. Hexes should be listed in order of movement.
 - Breaking: `<unit> breaks <hex>`
 - Detonate: `<unit> detonate <hex>` 
 - Ice Nova: `<unit> INova <hex 1> <hex 2> <hex 3>`
@@ -219,16 +224,17 @@ The current abilities on non-hero cards are shown below. As with all other abili
 - Hook Shot: `<unit> hooks <hex 1> to <hex 2>`
 - Resurrect: `<unit> resurrect <dead unit> to <hex>`. Note that `<dead unit>` should be the name of a previously drafted unit, that has already died.
 - Silencing: `<unit> silences <hex>`
-- Safe Haven: `<unit> teleports <hex 1> to <hex 2>`
+- Safe Haven: `<unit> teleport <hex 1> to <hex 2>`
 - Flame Sweep: `<unit> FSweep <hex 1> <hex 2> <hex 3>`
 - Untouchable: `<unit> untouch <hex>`
 - Arcane Blast: `<unit> ABlast <hex>`
 - Thunder Clap: `<unit> TClap <hex>`
-- Control enemy: `<unit> control <hex>`
+- Beguile: `<unit> beguile <hex>`
 - Flame Assault: `<unit> FAssault <hex>`
 - Nature's Call: `<unit> summons Treant to <hex>`
 - Lackey Empower: `<unit> empower <hex>`
-- Clearing debuff: `<unit> clears <hex>`
+- Enrage: `<unit> enrage <hex1> <hex2>`
+- Clearing debuff: `<unit> clear <debuff> <hex>`
 - Lightning Strike: `<unit> LStrike <hex>`
 
 ## Movement after an ability
