@@ -139,7 +139,7 @@ If a passive ability has no "dynamic" in game effect, then there is no need to m
 - `Path`/`APath`: Pathing/Allied Pathing
 - `SProof`/`Stead`: Spellproof/Steadfast
 - `Charge`/`Pier`/`Imbued`/`EoA`: Charging/Piercing/Imbued/Exhaust on Attack
-- `IStead`/`ISProof`: Ignore Steadfast/Ignore Spellproof
+- `IStead`/`ISProof/IDebuff`: Ignore Steadfast/Ignore Spellproof/Cannot be debuffed
 - `Net`/`Hook`: Net Shot/Hook Shot
 - `+1B`/`+2B`: +1/+2 Burned
 - `Disarm`: Disarmed
@@ -208,7 +208,7 @@ The current abilities on non-hero cards are shown below. As with all other abili
 - Roar: `<unit> roar <hex 1> to <hex 2>`. Ursa Major's "Greater Roar" ability is also denoted the same way. If the unit moves into `<hex 1>`, denote this as a separate action (e.g. `8. RGriff F4, UMinor roar F4 to F3; UMinor F4`)
 - Belch: `<unit> belch <hex 1> <hex 2> ... <hex 6>`. Up to 6 hexes can be affected by this, only list the hexes that are actually affected.
 - Taunt: `<unit> taunt <hex>`
-- Launch: `<unit> launch <hex 1> at <hex 2>`. `<hex 1>` is the hex of the sacraficed unit, `<hex 2>` is the target hex.
+- Fling: `<unit> fling <hex 1> at <hex 2>`. `<hex 1>` is the hex of the sacraficed unit, `<hex 2>` is the target hex.
 - Exhaust: `<unit> exhaust <hex>`
 - Healing: `<unit> heal <hex>`
 - Trample: `<unit> trample <hex 1> <hex 2> <hex 3>`. Hexes should be listed in order of movement.
@@ -225,7 +225,6 @@ The current abilities on non-hero cards are shown below. As with all other abili
 - Untouchable: `<unit> untouch <hex>`
 - Arcane Blast: `<unit> ABlast <hex>`
 - Thunder Clap: `<unit> TClap <hex>`
-- Beguile: `<unit> beguile <hex>`
 - Flame Assault: `<unit> FAssault <hex>`
 - Nature's Call: `<unit> summons Treant to <hex>`
 - Lackey Empower: `<unit> empower <hex>`
