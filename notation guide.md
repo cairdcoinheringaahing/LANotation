@@ -48,10 +48,10 @@ For example, below is a screenshot showing a draft setup, along with the correct
     Draft - 160 draft 80
     Bob: Kaar'thul. Chain Lightning 3, Lightning Bolt 3. Bulwark Boots, Arcane Stone, Buckler.
     Front: X, Char, WRider, Grunt, GTrench, Grunt, WArcher, Char, X
-    Back: X, DHatch, X, TDoctor, Hero, CWyvern, X, SCH, X
+    Back: X, DHatch, X, TDoctor, Hero, CWyvern, X, Hound, X
 
     Alice: Kaladrix. Velocity Greaves.
-    Front: GHawk, CGuard, NGH, UMinor, Hero, UMajor, NGH, DProc, GHawk
+    Front: Hawk, CGuard, NGHunter, UMinor, Hero, UMajor, NGHunter, DProc, Hawk
     Back: X, DSen, Wisp, DMystic, TBow, NSorc, Wisp, DSen, X
 
 ## Extended Draft
@@ -66,7 +66,7 @@ Given the strategic aspect of drafting, sometimes the turn order may provide imp
 Each turn in the draft, the unit and the hex it is drafted to is noted. Multiple unit drafts are separated with a semi-colon. For example, the opening to the above draft may have been:
 
     Draft - 160 draft 80
-    D1. Char B2; Char H2; Hero E1, UMinor F5; UMajor D5; Hero E6
+    D1. Char B2; Char H2; Kaar'thul E1, UMinor F5; UMajor D5; Kaladrix E6
     D2. TDoctor D1, Wisp G7; Wisp C7
     ...
     
@@ -81,7 +81,7 @@ Naturally, the rounds take up the meat of the game. Each round consists of a num
 It is then followed by a list of turns taken in that round, where each turn lists exactly one action by each player. Each turn is prefixed by a counter of the turns so far in the game, and this does not reset each round. Each player's turn is separated by a comma, and if multiple actions happen on a single turn, they are separated by a semicolon. For example, the opening move from the draft shown above may be
 
     Round 1: Alice
-    1. GHawk (I6) E4, GTrench E3
+    1. Hawk (I6) E4, GTrench E3
     2. Hero E6, Char B4
     
 Here, Alice opened by moving her Glade Hawk on **I6** into the central hex (**E4**), and Bob responded by moving his Trenchdigger Goblin forward one hex to **E3**. Note that we had to specify which of Alice's Glade Hawks moved to the center, as either would have been able to. However, as only one of Bob's Charbelchers can move to **B4**, we don't need to specify which.
@@ -106,13 +106,13 @@ Melee attacks use a similar format to moving. As a "full kill" melee attack resu
 
 When a unit uses an active ability, the format either follows `<unit> <ability keyword> <hex>` (for abilities) or `<unit>: <buff> <hex>` (for buffs), where `<unit>` is the unit using the ability, `<ability keyword>` is an abbreviation to indicate which ability was used, `<buff>` is one of the specific buffs listed below, and `<hex>` is the hex targeted by that ability. The full list of ability keywords can be found below.
 
-### Buffs
+### Buffs/Debuffs
 
 When a unit grants another unit either a buff or a debuff, we denote it as `<unit>: <buff> <hex>`. For example, `Tact: +1P D1` would mean that the Tactician grants +1 Power to the unit on **D1**. The list of buff/debuff abbreviations are shown below. If the buff/debuff is combinable, the movement goes before the colon: `Angel C2: +2S E2` would mean that the Angel moves to **C2**, then grants a +2 Shield to the unit on **E2**. If `<hex>` is omitted, the buff is assumed to be given to the unit giving the buff (so `Hero: +1A` would give +1 Action to the Hero).
 
 ### Abilities
 
-Most other abilities happen against a specific unit as the turn, such as dealing or healing damage, rooting/silencing/disarming/breaking units and more. These are written as `<unit> <ability keyword> <hex>`. For example, `ATM LStrike E4` would indicate that the Adept Tempest Mage used Lightning Strike on the unit on **E4**. Again, if an ability is combinable, the movement goes immediately after the unit: `TDoctor D2 heal D4` would say that the Troll Doctor moved to **D2**, then healed the unit on **D4**.
+Most other abilities happen against a specific unit as the turn, such as dealing or healing damage, rooting/silencing/disarming/breaking units and more. These are written as `<unit> <ability keyword> <hex>`. For example, `ATMage LStrike E4` would indicate that the Adept Tempest Mage used Lightning Strike on the unit on **E4**. Again, if an ability is combinable, the movement goes immediately after the unit: `TDoctor D2 heal D4` would say that the Troll Doctor moved to **D2**, then healed the unit on **D4**.
 
 ## Passive abilities
 
@@ -139,9 +139,14 @@ If a passive ability has no "dynamic" in game effect, then there is no need to m
 - `Path`/`APath`: Pathing/Allied Pathing
 - `SProof`/`Stead`: Spellproof/Steadfast
 - `Charge`/`Pier`/`Imbued`/`EoA`: Charging/Piercing/Imbued/Exhaust on Attack
-- `IStead`/`ISProof`: Ignore Steadfast/Ignore Spellproof
-- `+1B`/`+2B`: +1/+2 Burned
+- `IStead`/`ISProof/IDebuff`: Ignore Steadfast/Ignore Spellproof/Cannot be debuffed
 - `Net`/`Hook`: Net Shot/Hook Shot
+- `+1B`/`+2B`: +1/+2 Burned
+- `Disarm`: Disarmed
+- `Root`: Rooted
+- `Heat`: Cannot be healed or buffed
+- `Break`: Broken
+- `Silence`: Silenced
 
 ---
 
@@ -181,7 +186,7 @@ For Anwyn's standard ability, we add in an additional note at the end of the tur
 
 - Lightning Bolt: `Hero LBolt <N> <hex>`
 - Chain Lightning: `Hero Chain <N> <hex 1> <hex 2> <hex 3> <hex 4>`. If fewer targets are chosen than the maximum, simply omit the remaining hexes. Hexes should be ordered in decending order of damage dealt. For example, `Hero Chain F2 G3 H3` (in this case, using Chain Lightning 2) would deal 3 damage to **F2**, 2 to **G3** and 1 to **H3**.
-- Spellshock: `SShock <hex>`. Spellshock is denoted on the turn of the player hit, at the end, separated with a semicolon (e.g. `4. GSling shoot F4, ATM LStrike E4; SShock C6`)
+- Spellshock: `SShock <hex>`. Spellshock is denoted on the turn of the player hit, at the end, separated with a semicolon (e.g. `4. GSling shoot F4, ATMage LStrike E4; SShock C6`)
 - Battle Fury: `Hero BFury <hex>`.
 
 ### Kaladrix
@@ -193,7 +198,7 @@ For Anwyn's standard ability, we add in an additional note at the end of the tur
 ### Tristan
 
 - Shield Bash: `Hero SBash <hex>`
-- Arrest: `Hero disarm <hex>`
+- Arrest: `Hero: Disarm <hex>`
 
 ## Non-hero abilities
 
@@ -203,13 +208,10 @@ The current abilities on non-hero cards are shown below. As with all other abili
 - Roar: `<unit> roar <hex 1> to <hex 2>`. Ursa Major's "Greater Roar" ability is also denoted the same way. If the unit moves into `<hex 1>`, denote this as a separate action (e.g. `8. RGriff F4, UMinor roar F4 to F3; UMinor F4`)
 - Belch: `<unit> belch <hex 1> <hex 2> ... <hex 6>`. Up to 6 hexes can be affected by this, only list the hexes that are actually affected.
 - Taunt: `<unit> taunt <hex>`
-- Disarm: `<unit> disarm <hex>`
-- Launch: `<unit> launch <hex 1> at <hex 2>`. `<hex 1>` is the hex of the sacraficed unit, `<hex 2>` is the target hex.
+- Fling: `<unit> fling <hex 1> at <hex 2>`. `<hex 1>` is the hex of the sacraficed unit, `<hex 2>` is the target hex.
 - Exhaust: `<unit> exhaust <hex>`
 - Healing: `<unit> heal <hex>`
-- Rooting: `<unit> roots <hex>`
-- Trample: `<unit> trample <hex 1> <hex 2> <hex 3>`. Hexes should be listed in order of movement. Note that `<hex 3>` only exists if `<unit>` kills the unit on `<hex 3>` with Trample.
-- Breaking: `<unit> breaks <hex>`
+- Trample: `<unit> trample <hex 1> <hex 2> <hex 3>`. Hexes should be listed in order of movement.
 - Detonate: `<unit> detonate <hex>` 
 - Ice Nova: `<unit> INova <hex 1> <hex 2> <hex 3>`
 - Maneuver: `<unit> Man <hex>`
@@ -218,17 +220,16 @@ The current abilities on non-hero cards are shown below. As with all other abili
 - Frostbite: `<unit> FBite <hex>`
 - Hook Shot: `<unit> hooks <hex 1> to <hex 2>`
 - Resurrect: `<unit> resurrect <dead unit> to <hex>`. Note that `<dead unit>` should be the name of a previously drafted unit, that has already died.
-- Silencing: `<unit> silences <hex>`
-- Safe Haven: `<unit> teleports <hex 1> to <hex 2>`
+- Safe Haven: `<unit> teleport <hex 1> to <hex 2>`
 - Flame Sweep: `<unit> FSweep <hex 1> <hex 2> <hex 3>`
 - Untouchable: `<unit> untouch <hex>`
 - Arcane Blast: `<unit> ABlast <hex>`
 - Thunder Clap: `<unit> TClap <hex>`
-- Control enemy: `<unit> control <hex>`
 - Flame Assault: `<unit> FAssault <hex>`
 - Nature's Call: `<unit> summons Treant to <hex>`
 - Lackey Empower: `<unit> empower <hex>`
-- Clearing debuff: `<unit> clears <hex>`
+- Enrage: `<unit> enrage <hex1> <hex2>`
+- Clearing debuff: `<unit> clear <debuff> <hex>`
 - Lightning Strike: `<unit> LStrike <hex>`
 
 ## Movement after an ability
@@ -270,7 +271,7 @@ There are four ways to denote the end of the game:
         
         Round 7: Diane
         52. GTrench E4, Hero H2
-        53. IMinotaur trample H2, GHawk H2#
+        53. IMinotaur trample H2, Hawk H2#
 
         GTrench finishes in E4.
         
@@ -284,6 +285,6 @@ There are four ways to denote the end of the game:
         Round 5: Diane
         40. Wisp G3 heal F3, AWizard: -1P F3
         41. UMajor F4
-        42. GHawk C4.
+        42. Hawk C4.
 
     As the Glade Hawk charging to **C4** kills the attacker's last unit, it ends the game. You can optionally include `No unit finishes in E4.`, but this isn't required in this case.

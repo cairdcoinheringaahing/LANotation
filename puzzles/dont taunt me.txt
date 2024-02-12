@@ -4,15 +4,11 @@ GBomb E6; H5
 SArcher F3; F4; G5
 
 Kaladrix G4, 2 Mana
-TSatyr H3
-GHawk C4
+Satyr H3
+Hawk C4
 Blade Echo 1
 Blink
 
 Round 7: Sylvan
 1. Hero Blink E4, SArcher (F3) shoot E4
-2. TSatyr G4 taunt F4.
-
-Round 7: Sylvan
-1. Hero Blink E4, SArcher (F3) shoot E4
-2. GHawk F4.
+2. Satyr G4 taunt F4.

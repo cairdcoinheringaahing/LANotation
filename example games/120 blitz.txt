@@ -8,7 +8,7 @@ caird: Argog
 caird*: Argog
 
 caird: Argog. Swift Strike, Omnislash, Reflexes. Felgard's Battle Suit, Crystal Sword, Demon Tooth Dagger.
-Front: Berserker, CWyvern, FMinotaur, CWyvern, VWarlock, CWyvern, IMinotaur, CWyvern, Berserker
+Front: TBerserk, CWyvern, FMinotaur, CWyvern, VWarlock, CWyvern, IMinotaur, CWyvern, TBerserk
 Back: GLackey, VWarlock, GLackey, VWarlock, TDoctor, Hero, GLackey, VWarlock, GLackey
 
 caird*: Argog. Inner Vitality 3, Swift Strike, Omnislash, Reflexes. Felgard's Battle Suit, Vitality Charm 3.
@@ -16,18 +16,18 @@ Front: DHatch, CWyvern, DHatch, CWyvern, BDragon, CWyvern, DHatch, CWyvern, DHat
 Back: DHatch, DHatch, GLackey, Hero, X, CWyvern, GLackey. DHatch, DHatch
 
 Round 1: caird
-1. VWarlock E3 roots E6; VWarlock: +1B E6, CWyvern H1
-2. VWarlock C3 roots B5; VWarlock: +1B B5, CWyvern D1
+1. VWarlock E3: Root E6; VWarlock: +1B E6, CWyvern H1
+2. VWarlock C3: Root B5; VWarlock: +1B B5, CWyvern D1
 3. CWyvern B6, DHatch (G6) E4 FAssault E3
 4. CWyvern H6, DHatch (A6) C4 FAssault C3
 5. GLackey C3: +1P D2, DHatch (I7) H5 FAssault H6
 6. CWyvern D6, DHatch (A7) FAssault B6
 7. GLackey (I1) G2: +1P F2, CWyvern B6
 8. CWyvern E4, DHatch FAssault D6
-9. Berserker C4, GLackey D6
+9. TBerserk C4, GLackey D6
 10. FMinotaur D1, GLackey H6
 11. GLackey C1, DHatch I3 FAssault I2
-12. Berserker I3, CWyvern Pass
+12. TBerserk I3, CWyvern Pass
 13. IMinotaur H1, Hero D4
 14. GLackey Pass, BDragon Pass
 15. Hero Pass
@@ -41,7 +41,7 @@ Round 2: caird
 21. GLackey F2 heal F3, GLackey C6: +1P B5
 22. Hero D3, CWyvern F3#
 23. GLackey Pass, CWyvern E6
-24. Berserker Pass, GLackey F6
+24. TBerserk Pass, GLackey F6
 
 Round 3: caird
 25. IMinotaur E4 trample F4, BDragon E3 FSweep D3 E4

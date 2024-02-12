@@ -1,6 +1,6 @@
 Board:
 
-Hero E3, 0 Mana
+Kaarthul E3, 0 Mana
 CTroll E4
 GTrench B6; G5
 LBolt 1

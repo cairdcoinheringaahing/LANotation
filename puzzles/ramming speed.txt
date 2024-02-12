@@ -1,13 +1,13 @@
 Board:
 
 Argog C5, Mana 0 
-Cave Troll E4, Shield 1
-Cave Troll G3
+CTroll E4, Shield 1
+CTroll G3
 Reflexes
 Omnislash
 
 Tristan E2, Shield 3, Mana 1
-Battering Ram H2
+Ram H2
 Squire C4
 Shield Bash
 Divine Favor 3
