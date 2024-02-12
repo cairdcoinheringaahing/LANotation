@@ -1,7 +1,7 @@
 Board:
 
 LArcher C5
-ELA D5
+ELArcher D5
 Halb E5
 
 Anwyn D2, 0 Mana
@@ -10,5 +10,5 @@ BElk F2
 
 Round 7: Sylvan
 1. Hero Pass, Halb E4
-2. DSen Man F2, ELA shoot E3
+2. DSen Man F2, ELArcher shoot E3
 3. BElk E4, LArcher shoot E4.

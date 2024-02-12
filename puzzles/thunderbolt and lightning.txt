@@ -3,12 +3,12 @@ Board:
 HBear E4
 TDoctor D4, 1 Mana
 
-ATM E1, 2 Mana
+ATMage E1, 2 Mana
 Crossbow D1; G4; H4
 Squire G2
 
 Round 7: Arengard
-1. ATM TClap E4, TDoctor E3
+1. ATMage TClap E4, TDoctor E3
 2. Crossbow D3 shoot E4
 3. Crossbow F3 shoot E4
 4. Crossbow F4 shoot E4

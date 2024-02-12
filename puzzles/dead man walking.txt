@@ -5,9 +5,9 @@ Pike I3
 
 WRider H3
 GBomb C6
-SCH B5
+Hound B5
 
 Round 7: Arengard
 1. Pike H3#, WRider E4
-2. Angel resurrect Pike E3; Angel: +1A, SCH C4
+2. Angel resurrect Pike E3; Angel: +1A, Hound C4
 3. Pike E4, GBomb D4 detonate C4.

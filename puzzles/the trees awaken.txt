@@ -4,7 +4,7 @@ Treant H5, 5 Health; B3
 GDruid H2, 2 Mana; C1, 1 Mana
 
 UKnight G5
-ELA E5
+ELArcher E5
 Pike E4
 Enforcer D2
 

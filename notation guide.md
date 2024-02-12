@@ -48,10 +48,10 @@ For example, below is a screenshot showing a draft setup, along with the correct
     Draft - 160 draft 80
     Bob: Kaar'thul. Chain Lightning 3, Lightning Bolt 3. Bulwark Boots, Arcane Stone, Buckler.
     Front: X, Char, WRider, Grunt, GTrench, Grunt, WArcher, Char, X
-    Back: X, DHatch, X, TDoctor, Hero, CWyvern, X, SCH, X
+    Back: X, DHatch, X, TDoctor, Hero, CWyvern, X, Hound, X
 
     Alice: Kaladrix. Velocity Greaves.
-    Front: GHawk, CGuard, NGH, UMinor, Hero, UMajor, NGH, DProc, GHawk
+    Front: Hawk, CGuard, NGHunter, UMinor, Hero, UMajor, NGHunter, DProc, Hawk
     Back: X, DSen, Wisp, DMystic, TBow, NSorc, Wisp, DSen, X
 
 ## Extended Draft
@@ -81,7 +81,7 @@ Naturally, the rounds take up the meat of the game. Each round consists of a num
 It is then followed by a list of turns taken in that round, where each turn lists exactly one action by each player. Each turn is prefixed by a counter of the turns so far in the game, and this does not reset each round. Each player's turn is separated by a comma, and if multiple actions happen on a single turn, they are separated by a semicolon. For example, the opening move from the draft shown above may be
 
     Round 1: Alice
-    1. GHawk (I6) E4, GTrench E3
+    1. Hawk (I6) E4, GTrench E3
     2. Hero E6, Char B4
     
 Here, Alice opened by moving her Glade Hawk on **I6** into the central hex (**E4**), and Bob responded by moving his Trenchdigger Goblin forward one hex to **E3**. Note that we had to specify which of Alice's Glade Hawks moved to the center, as either would have been able to. However, as only one of Bob's Charbelchers can move to **B4**, we don't need to specify which.
@@ -112,7 +112,7 @@ When a unit grants another unit either a buff or a debuff, we denote it as `<uni
 
 ### Abilities
 
-Most other abilities happen against a specific unit as the turn, such as dealing or healing damage, rooting/silencing/disarming/breaking units and more. These are written as `<unit> <ability keyword> <hex>`. For example, `ATM LStrike E4` would indicate that the Adept Tempest Mage used Lightning Strike on the unit on **E4**. Again, if an ability is combinable, the movement goes immediately after the unit: `TDoctor D2 heal D4` would say that the Troll Doctor moved to **D2**, then healed the unit on **D4**.
+Most other abilities happen against a specific unit as the turn, such as dealing or healing damage, rooting/silencing/disarming/breaking units and more. These are written as `<unit> <ability keyword> <hex>`. For example, `ATMage LStrike E4` would indicate that the Adept Tempest Mage used Lightning Strike on the unit on **E4**. Again, if an ability is combinable, the movement goes immediately after the unit: `TDoctor D2 heal D4` would say that the Troll Doctor moved to **D2**, then healed the unit on **D4**.
 
 ## Passive abilities
 
@@ -186,7 +186,7 @@ For Anwyn's standard ability, we add in an additional note at the end of the tur
 
 - Lightning Bolt: `Hero LBolt <N> <hex>`
 - Chain Lightning: `Hero Chain <N> <hex 1> <hex 2> <hex 3> <hex 4>`. If fewer targets are chosen than the maximum, simply omit the remaining hexes. Hexes should be ordered in decending order of damage dealt. For example, `Hero Chain F2 G3 H3` (in this case, using Chain Lightning 2) would deal 3 damage to **F2**, 2 to **G3** and 1 to **H3**.
-- Spellshock: `SShock <hex>`. Spellshock is denoted on the turn of the player hit, at the end, separated with a semicolon (e.g. `4. GSling shoot F4, ATM LStrike E4; SShock C6`)
+- Spellshock: `SShock <hex>`. Spellshock is denoted on the turn of the player hit, at the end, separated with a semicolon (e.g. `4. GSling shoot F4, ATMage LStrike E4; SShock C6`)
 - Battle Fury: `Hero BFury <hex>`.
 
 ### Kaladrix
@@ -271,7 +271,7 @@ There are four ways to denote the end of the game:
         
         Round 7: Diane
         52. GTrench E4, Hero H2
-        53. IMinotaur trample H2, GHawk H2#
+        53. IMinotaur trample H2, Hawk H2#
 
         GTrench finishes in E4.
         
@@ -285,6 +285,6 @@ There are four ways to denote the end of the game:
         Round 5: Diane
         40. Wisp G3 heal F3, AWizard: -1P F3
         41. UMajor F4
-        42. GHawk C4.
+        42. Hawk C4.
 
     As the Glade Hawk charging to **C4** kills the attacker's last unit, it ends the game. You can optionally include `No unit finishes in E4.`, but this isn't required in this case.

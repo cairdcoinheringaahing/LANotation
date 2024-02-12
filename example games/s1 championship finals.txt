@@ -15,7 +15,7 @@ D8. GLackey B6; GLackey H6, GTrench H2
 D9. Grunt H5, Battle Fury; Lightning Bolt 1
 D10. WArcher F6, SArcher F1; HBear F2
 D11. BDragon D6, BDragon D2
-D12. WRider B5; Argog F5; Broad Sword, SCH D1; Spellshock
+D12. WRider B5; Argog F5; Broad Sword, Hound D1; Spellshock
 
 Round 1: Gravy
 1. Hero F2, SArcher shoot F2
@@ -26,7 +26,7 @@ Round 1: Gravy
 6. DHatch I5 FAssualt I4; SShock I6, Hero BFury I2; Hero +1A
 7. GLackey (H6) Pass, Hero shoot F2
 8. GLackey (B6) Pass, VWarlock I3: Root I6; VWarlock: +1B I6
-9. GArcher (I6) Pass, SCH F2
+9. GArcher (I6) Pass, Hound F2
 10. GArcher (A6) Pass, GLackey Pass
 11. Grunt H4, GArcher H3 shoot H4
 12. WArcher (F6) G4 shoot H3, DHatch G3 FAssualt G4
